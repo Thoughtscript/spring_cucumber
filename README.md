@@ -10,7 +10,7 @@ Experiments with Spring, Cucumber, and revisiting JUnit 5.
 
 1. Should run all supplied kinds of test under command `mvn clean install`.
 2. Should run all supplied kinds of test when right-clicking and selecting the "run test" option in IntelliJ (on the `/test` classpath).
-3. Should run all supplied kinds of tests with `maven-sure-fire` under command `mvn spring-boot:run`.
+3. Should run all supplied kinds of tests with `maven-sure-fire` under command `mvn test spring-boot:run`.
 
 ## Install
 
@@ -21,7 +21,7 @@ Maven, Jupiter, Cucumber, etc.
 ```BASH
 mvn clean
 mvn install
-mvn spring-boot:run
+mvn test spring-boot:run
 ```
 
 ## Correct Outputs
