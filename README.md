@@ -154,6 +154,188 @@ Process finished with exit code 0
 
 ![IntelliJ](intellij-output.png)
 
+```bash
+ mvn clean install
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< io.thoughtscript.example:spring-cucumber >--------------
+[INFO] Building spring-cucumber 1.0.0
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.3.2:clean (default-clean) @ spring-cucumber ---
+[INFO] Deleting G:\_core_examples\spring_cucumber\target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ spring-cucumber ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:compile (default-compile) @ spring-cucumber ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 4 source files with javac [debug release 18] to target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ spring-cucumber ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.11.0:testCompile (default-testCompile) @ spring-cucumber ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 8 source files with javac [debug release 18] to target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.1.2:test (default-test) @ spring-cucumber ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.thoughtscript.example.controllers.ExampleRestControllerInjectMocksTest
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.706 s -- in io.thoughtscript.example.controllers.ExampleRestControllerInjectMocksTest
+[INFO] Running io.thoughtscript.example.controllers.ExampleRestControllerIntegrationTest
+14:21:31.611 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [io.thoughtscript.example.controllers.ExampleRestControllerIntegrationTest]: ExampleRestControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:21:31.717 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration io.thoughtscript.example.ExampleApp for test class io.thoughtscript.example.controllers.ExampleRestControllerIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-07T14:21:31.990-06:00  INFO 12884 --- [           main] e.c.ExampleRestControllerIntegrationTest : Starting ExampleRestControllerIntegrationTest using Java 18.0.2.1 with PID 12884 (started by adami in G:\_core_examples\spring_cucumber)
+2024-01-07T14:21:31.992-06:00  INFO 12884 --- [           main] e.c.ExampleRestControllerIntegrationTest : No active profile set, falling back to 1 default profile: "default"
+2024-01-07T14:21:32.729-06:00  INFO 12884 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-01-07T14:21:32.729-06:00  INFO 12884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-01-07T14:21:32.731-06:00  INFO 12884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-01-07T14:21:32.745-06:00  INFO 12884 --- [           main] e.c.ExampleRestControllerIntegrationTest : Started ExampleRestControllerIntegrationTest in 0.923 seconds (process running for 2.455)
+2024-01-07T14:21:32.759-06:00  INFO 12884 --- [           main] i.t.example.helpers.StaticHelpers        : invoked
+2024-01-07T14:21:32.760-06:00  INFO 12884 --- [           main] i.t.example.services.ExampleService      : example
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.242 s -- in io.thoughtscript.example.controllers.ExampleRestControllerIntegrationTest
+[INFO] Running io.thoughtscript.example.controllers.ExampleRestControllerWebMvcTest
+2024-01-07T14:21:32.769-06:00  INFO 12884 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [io.thoughtscript.example.controllers.ExampleRestControllerWebMvcTest]: ExampleRestControllerWebMvcTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-07T14:21:32.777-06:00  INFO 12884 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration io.thoughtscript.example.ExampleApp for test class io.thoughtscript.example.controllers.ExampleRestControllerWebMvcTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-07T14:21:32.793-06:00  INFO 12884 --- [           main] i.t.e.c.ExampleRestControllerWebMvcTest  : Starting ExampleRestControllerWebMvcTest using Java 18.0.2.1 with PID 12884 (started by adami in G:\_core_examples\spring_cucumber)
+2024-01-07T14:21:32.793-06:00  INFO 12884 --- [           main] i.t.e.c.ExampleRestControllerWebMvcTest  : No active profile set, falling back to 1 default profile: "default"
+2024-01-07T14:21:32.884-06:00  INFO 12884 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-01-07T14:21:32.884-06:00  INFO 12884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-01-07T14:21:32.885-06:00  INFO 12884 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-01-07T14:21:32.888-06:00  INFO 12884 --- [           main] i.t.e.c.ExampleRestControllerWebMvcTest  : Started ExampleRestControllerWebMvcTest in 0.107 seconds (process running for 2.599)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/example
+       Parameters = {}
+          Headers = [Accept:"application/json"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = io.thoughtscript.example.controllers.ExampleRestController
+           Method = io.thoughtscript.example.controllers.ExampleRestController#example()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = []
+     Content type = null
+             Body =
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.189 s -- in io.thoughtscript.example.controllers.ExampleRestControllerWebMvcTest
+[INFO] Running io.thoughtscript.example.helpers.StaticHelpersTest
+2024-01-07T14:21:32.958-06:00  INFO 12884 --- [           main] i.t.example.helpers.StaticHelpersTest    : JUnit 5 Jupiter tests initializing...
+2024-01-07T14:21:32.960-06:00  INFO 12884 --- [           main] i.t.example.helpers.StaticHelpersTest    : Running before each time...
+2024-01-07T14:21:32.960-06:00  INFO 12884 --- [           main] i.t.example.helpers.StaticHelpers        : invoked
+2024-01-07T14:21:32.961-06:00  INFO 12884 --- [           main] i.t.example.helpers.StaticHelpersTest    : Running after each time...
+2024-01-07T14:21:32.962-06:00  INFO 12884 --- [           main] i.t.example.helpers.StaticHelpersTest    : Running before each time...
+2024-01-07T14:21:32.963-06:00  INFO 12884 --- [           main] i.t.example.helpers.StaticHelpers        : invoked
+2024-01-07T14:21:32.963-06:00  INFO 12884 --- [           main] i.t.example.helpers.StaticHelpersTest    : Running after each time...
+2024-01-07T14:21:32.964-06:00  INFO 12884 --- [           main] i.t.example.helpers.StaticHelpersTest    : Running before each time...
+2024-01-07T14:21:32.964-06:00  INFO 12884 --- [           main] i.t.example.helpers.StaticHelpers        : invoked
+2024-01-07T14:21:32.964-06:00  INFO 12884 --- [           main] i.t.example.helpers.StaticHelpers        : invoked
+2024-01-07T14:21:32.965-06:00  INFO 12884 --- [           main] i.t.example.helpers.StaticHelpersTest    : Running after each time...
+2024-01-07T14:21:32.966-06:00  INFO 12884 --- [           main] i.t.example.helpers.StaticHelpersTest    : JUnit 5 Jupiter tests completed...
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in io.thoughtscript.example.helpers.StaticHelpersTest
+[INFO] Running io.thoughtscript.example.services.ExampleServiceWithAutoWiringTest
+2024-01-07T14:21:32.969-06:00  INFO 12884 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [io.thoughtscript.example.services.ExampleServiceWithAutoWiringTest]: ExampleServiceWithAutoWiringTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-07T14:21:32.975-06:00  INFO 12884 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration io.thoughtscript.example.ExampleApp for test class io.thoughtscript.example.services.ExampleServiceWithAutoWiringTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-07T14:21:32.996-06:00  INFO 12884 --- [           main] i.t.e.s.ExampleServiceWithAutoWiringTest : Starting ExampleServiceWithAutoWiringTest using Java 18.0.2.1 with PID 12884 (started by adami in G:\_core_examples\spring_cucumber)
+2024-01-07T14:21:32.997-06:00  INFO 12884 --- [           main] i.t.e.s.ExampleServiceWithAutoWiringTest : No active profile set, falling back to 1 default profile: "default"
+2024-01-07T14:21:33.112-06:00  INFO 12884 --- [           main] i.t.e.s.ExampleServiceWithAutoWiringTest : Started ExampleServiceWithAutoWiringTest in 0.134 seconds (process running for 2.824)
+2024-01-07T14:21:33.114-06:00  INFO 12884 --- [           main] i.t.example.helpers.StaticHelpers        : invoked
+2024-01-07T14:21:33.114-06:00  INFO 12884 --- [           main] i.t.example.services.ExampleService      : example
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 s -- in io.thoughtscript.example.services.ExampleServiceWithAutoWiringTest
+[INFO] Running io.thoughtscript.example.services.ExampleServiceWithoutAutoWiringTest
+2024-01-07T14:21:33.118-06:00  INFO 12884 --- [           main] i.t.example.helpers.StaticHelpers        : invoked
+2024-01-07T14:21:33.118-06:00  INFO 12884 --- [           main] i.t.example.services.ExampleService      : example
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in io.thoughtscript.example.services.ExampleServiceWithoutAutoWiringTest
+[INFO] Running io.thoughtscript.example.acceptance.CucumberAcceptanceTests
+2024-01-07T14:21:33.185-06:00  INFO 12884 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [io.thoughtscript.example.acceptance.CucumberAcceptanceTests]: CucumberAcceptanceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-07T14:21:33.189-06:00  INFO 12884 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration io.thoughtscript.example.ExampleApp for test class io.thoughtscript.example.acceptance.CucumberAcceptanceTests
+2024-01-07T14:21:33.219-06:00  INFO 12884 --- [           main] i.t.example.acceptance.StepDefinitions   : prepping...
+2024-01-07T14:21:33.221-06:00  INFO 12884 --- [           main] i.t.example.acceptance.StepDefinitions   : Result: 20 (expected 20)
+2024-01-07T14:21:33.225-06:00  INFO 12884 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [io.thoughtscript.example.acceptance.CucumberAcceptanceTests]: CucumberAcceptanceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-07T14:21:33.225-06:00  INFO 12884 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration io.thoughtscript.example.ExampleApp for test class io.thoughtscript.example.acceptance.CucumberAcceptanceTests
+2024-01-07T14:21:33.228-06:00  INFO 12884 --- [           main] i.t.example.acceptance.StepDefinitions   : prepping...
+2024-01-07T14:21:33.229-06:00  INFO 12884 --- [           main] i.t.example.acceptance.StepDefinitions   : Result: 6 (expected 6)
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.115 s -- in io.thoughtscript.example.acceptance.CucumberAcceptanceTests
+[INFO] 
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- maven-jar-plugin:3.3.0:jar (default-jar) @ spring-cucumber ---
+[INFO] Building jar: G:\_core_examples\spring_cucumber\target\spring-cucumber-1.0.0.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:3.2.1:repackage (repackage) @ spring-cucumber ---
+[INFO] Replacing main artifact G:\_core_examples\spring_cucumber\target\spring-cucumber-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to G:\_core_examples\spring_cucumber\target\spring-cucumber-1.0.0.jar.original
+[INFO]
+[INFO] --- maven-install-plugin:3.1.1:install (default-install) @ spring-cucumber ---
+[INFO] Installing G:\_core_examples\spring_cucumber\pom.xml to C:\Users\adami\.m2\repository\io\thoughtscript\example\spring-cucumber\1.0.0\spring-cucumber-1.0.0.pom
+[INFO] Installing G:\_core_examples\spring_cucumber\target\spring-cucumber-1.0.0.jar to C:\Users\adami\.m2\repository\io\thoughtscript\example\spring-cucumber\1.0.0\spring-cucumber-1.0.0.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.959 s
+[INFO] Finished at: 2024-01-07T14:21:33-06:00
+[INFO] ------------------------------------------------------------------------
+```
+
 ## API Endpoints
 
 GET http://localhost:8080/api/example
